@@ -1,0 +1,20 @@
+<html>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('myVideo');
+    video.play().catch(error => {
+      alert(error);
+    });
+  }, 1000);
+</script>
+<body>
+  <video autoplay playsinline muted loop width="100px" id="myVideo">
+    <source src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.mp4" type="video/mp4" />
+    <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+    Hello there
+  </video>
+
+Hello
+</body>
+
+</html>
