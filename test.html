@@ -1,52 +1,95 @@
 <html>
-<script>
-  document.setTimeout(() => {
-    const video = document.getElementById('myVideo');
-    video.muted = true;
-    video.playsInline = true;
-    video.play().catch(error => {
-      alert(error);
-    });
-  }, 1000);
-</script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // document.setTimeout(() => {
+    //   const video = document.getElementById('myVideo');
+    //   video.muted = true;
+    //   video.playsInline = true;
+    //   video.play().catch(error => {
+    //     alert(error);
+    //   });
+    // }, 1000);
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
 <body>
-  7
+  8
+
+  <div class="flex flex-row">
+    <div class="w-1/2">
+      Original
+      <video autoplay playsinline muted loop width="100%" id="myVideo">
+        <source src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+    <div class="w-1/2">
+      Different example
+      <video autoplay playsinline muted loop width="100%" id="myVideo3">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+        Hello there
+      </video>
+    </div>
+  </div>
+
+  <div class="flex flex-row">
+    <div class="w-1/2">
+      Smaller M4V format
+      <video autoplay playsinline muted loop width="100%" id="myVideo2">
+        <source src="xplain-demo-short.m4v" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+    <div class="w-1/2">
+      Smaller MP4 format
+      <video autoplay playsinline muted loop width="200px" id="myVideo3">
+        <source src="demo-short-1.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+  </div>
+
+  <div class="1dvh"></div>
+
+  <div class="font-bold">Below the fold</div>
+
+  <div class="flex flex-row">
+    <div class="w-1/2">
+      Original
+      <video autoplay playsinline muted loop width="100%" id="myVideo">
+        <source src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+    <div class="w-1/2">
+      Different example
+      <video autoplay playsinline muted loop width="100%" id="myVideo3">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+        Hello there
+      </video>
+    </div>
+  </div>
   
-  <video autoplay playsinline muted loop width="200px" id="myVideo">
-    <source src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.mp4" type="video/mp4"></source>
-    <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
-    Hello there
-  </video>
-
-  <video autoplay playsinline muted loop width="200px" id="myVideo2">
-    <source src="xplain-demo-short.m4v" type="video/mp4"></source>
-    <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
-    Hello there
-  </video>
-
-  <video autoplay playsinline muted loop width="200px" id="myVideo3">
-    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"></source>
-    <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
-    Hello there
-  </video>
-
-  <figure>
-    <video width="500" playsinline autoplay muted loop controls>
-      <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
-      </source>
-      <p>
-        Your browser doesn't support HTML video. You can
-        <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" download="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">download the video</a> instead.
-      </p>
-    </video>
-    <figcaption>Basic video HTML with defined playsinline, autoplay, muted and loop</figcaption>
-  </figure>
-
-  <video autoplay playsinline muted loop width="200px" id="myVideo3">
-    <source src="demo-short-1.mp4" type="video/mp4"></source>
-    <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
-    Hello there
-  </video>
+  <div class="flex flex-row">
+    <div class="w-1/2">
+      Smaller M4V format
+      <video autoplay playsinline muted loop width="100%" id="myVideo2">
+        <source src="xplain-demo-short.m4v" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+    <div class="w-1/2">
+      Smaller MP4 format
+      <video autoplay playsinline muted loop width="200px" id="myVideo3">
+        <source src="demo-short-1.mp4" type="video/mp4"></source>
+        <img src="https://learnyourway.withgoogle.com/static/landing/xplain-demo-short.png" alt="Description of video content">
+      </video>
+    </div>
+  </div>
 </body>
 
 </html>
